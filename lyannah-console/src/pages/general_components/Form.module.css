@@ -1,0 +1,6 @@
+.input_form {
+  background-color: #f1f1fe;
+}
+.input_form:focus {
+  outline: 0;
+}

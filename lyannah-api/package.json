@@ -1,0 +1,45 @@
+{
+  "name": "lyannah-api",
+  "version": "1.0.0",
+  "description": "Lyannah backend API with node + typescript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --watch & pm2 start build/src/server.js --watch & pm2 logs",
+    "stop": "pm2 stop build/src/server.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiizzy/lyannah-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Fisayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiizzy/lyannah-api/issues"
+  },
+  "homepage": "https://github.com/fiizzy/lyannah-api#readme",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/mailgun-js": "^0.22.12",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "password-validator": "^5.2.1"
+  },
+  "devDependencies": {
+    "pm2": "^5.2.0"
+  }
+}

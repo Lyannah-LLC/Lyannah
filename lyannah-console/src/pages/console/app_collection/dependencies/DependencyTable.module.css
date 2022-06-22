@@ -1,0 +1,14 @@
+.dependencyTable {
+  border-radius: 300px;
+  background-color: #f1f1fe;
+}
+.tableRow {
+  border-bottom: 1px solid lightgrey;
+  transition: 0.3s;
+}
+
+.tableRow:hover {
+  border-bottom: 1px solid lightgrey;
+  background-color: #d1d1ff;
+  cursor: pointer;
+}

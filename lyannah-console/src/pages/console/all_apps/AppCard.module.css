@@ -1,0 +1,16 @@
+.AppCard {
+  box-shadow: 0px 0px 0px 0px white;
+  transform: translateY(0px);
+  transform-origin: bottom right;
+  transition: 0.3s box-shadow;
+  transition: 0.3s transform;
+  border: 1px solid lightGrey;
+}
+
+.AppCard:hover {
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transform: translateY(-5px) scaleZ(3);
+  transform-origin: bottom left;
+  border: 1px solid black;
+}
