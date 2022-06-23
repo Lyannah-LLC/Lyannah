@@ -1,23 +1,34 @@
 import { BoxPadding } from "../../general_components/BoxPadding";
 import { Button } from "../../general_components/button";
-import { NavigationBar } from "../../general_components/NavigationBar";
 import { AppCard } from "./AppCard";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AllAppsContext } from "../../../contexts/all_apps/all_apps";
+import { Form } from "../../general_components/Form";
 import { Overlay } from "../../general_components/create_new_app/Overlay";
-import { Link } from "react-router-dom";
 
 export const AllApps = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const allAppsContext = useContext(AllAppsContext);
   const buttonHandler = () => {
-    setIsOpen(true);
+    allAppsContext.setIsModalOpen(true);
   };
-
-  const onClickHandler = () => {
-    //Do nothing
+  const closeModal = () => {
+    allAppsContext.setIsModalOpen(false);
   };
 
   return (
     <div>
+      {allAppsContext.isModalOpen ? (
+        <Overlay
+          title="Create new app collection"
+          child={
+            <>
+              <Form placeHolder="App Name " />
+              <Form placeHolder="App Platform " />
+              <Button title="Create App" onClick={closeModal} />
+            </>
+          }
+        />
+      ) : null}
       <BoxPadding>
         <div className="">
           <div className="md:flex justify-between ">
@@ -25,7 +36,7 @@ export const AllApps = () => {
             <Button title="New App" width="contain" onClick={buttonHandler} />
           </div>
           <div className="md:flex gap-8 ">
-            <AppCard onClick={onClickHandler} />
+            <AppCard onClick={() => {}} />
             <AppCard />
           </div>
         </div>
