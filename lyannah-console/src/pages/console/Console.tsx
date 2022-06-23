@@ -12,16 +12,6 @@ export const Console = () => {
   // }
   return (
     <div>
-      {/* <Overlay
-        title="Create new app collection"
-        child={
-          <>
-            <Form placeHolder="App Name " />
-            <Form placeHolder="App Platform " />
-            <Button title="Create App" />
-          </>
-        }
-      /> */}
       <NavigationBar />
       <AllAppsContextProvider>
         <AllApps />
