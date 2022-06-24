@@ -27,6 +27,7 @@ export const AllApps = () => {
               <Button title="Create App" onClick={closeModal} />
             </>
           }
+          onCloseModal={closeModal}
         />
       ) : null}
       <BoxPadding>

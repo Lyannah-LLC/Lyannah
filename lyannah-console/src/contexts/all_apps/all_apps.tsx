@@ -15,14 +15,6 @@ export const AllAppsContextProvider = (props: any) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  // const closeModal = () => {
-  //   setModalOpen(false);
-  // };
-
-  // const handleIsLoading = () => {
-  //   setIsLoading(!isLoading);
-  // };
-
   const createNewApp = () => {
     //make a request and close modal
     setModalOpen(false);
