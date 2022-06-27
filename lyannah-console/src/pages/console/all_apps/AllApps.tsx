@@ -1,4 +1,3 @@
-import { BoxPadding } from "../../general_components/BoxPadding";
 import { Button } from "../../general_components/button";
 import { AppCard } from "./AppCard";
 import { useContext } from "react";
@@ -32,7 +31,6 @@ export const AllApps = () => {
           onCloseModal={closeModal}
         />
       ) : null}
-      <BoxPadding>
         <div className="">
           <div className="md:flex justify-between ">
             <p className="self-center text-lg font-bold">All your apps</p>
@@ -43,7 +41,6 @@ export const AllApps = () => {
             <AppCard />
           </div>
         </div>
-      </BoxPadding>
     </div>
   );
 };

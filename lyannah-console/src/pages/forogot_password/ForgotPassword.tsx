@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { AuthLanding } from "../general_components/AuthLanding";
-import { BoxPadding } from "../general_components/BoxPadding";
 import { Button } from "../general_components/button";
 import { Form } from "../general_components/Form";
 import { SocialAuthButton } from "../general_components/SocialAuthButton";
@@ -8,7 +7,6 @@ import classes from "../login/Login.module.css";
 
 export const ForgotPassword = () => {
   return (
-    <BoxPadding>
       <div
         className={`box-border text-xl flex md:flex-row  flex-col  ${classes.parent}  `}
       >
@@ -43,6 +41,5 @@ export const ForgotPassword = () => {
         </div>
         <AuthLanding />
       </div>
-    </BoxPadding>
   );
 };

@@ -1,5 +1,4 @@
 import { AuthLanding } from "../general_components/AuthLanding";
-import { BoxPadding } from "../general_components/BoxPadding";
 import { Button } from "../general_components/button";
 import { Form } from "../general_components/Form";
 import { SocialAuthButton } from "../general_components/SocialAuthButton";
@@ -8,7 +7,6 @@ import { Link } from "react-router-dom";
 
 export const ResetPassword = (props: any) => {
   return (
-    <BoxPadding>
       <div
         className={`box-border text-xl flex md:flex-row  flex-col  ${classes.parent}  `}
       >
@@ -42,6 +40,5 @@ export const ResetPassword = (props: any) => {
         </div>
         <AuthLanding />
       </div>
-    </BoxPadding>
   );
 };
