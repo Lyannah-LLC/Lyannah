@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { DependencyContext } from "../../../../contexts/dependencies/dependencies";
 import { Button } from "../../../general_components/button";
 import { Form } from "../../../general_components/Form";
@@ -10,14 +10,17 @@ export const DependenciesDisplay = () => {
   const dependencyContext = useContext(DependencyContext);
 
   const buttonHandler = () => {
-    dependencyContext.setIsModalOpen(true);
-    console.log("Working");
     console.log(dependencyContext.isModalOpen);
+    dependencyContext.setIsModalOpen(true);
   };
 
   const closeModal = () => {
     dependencyContext.setIsModalOpen(false);
   };
+
+  useEffect(() => {
+    console.log(dependencyContext.isModalOpen);
+  }, [dependencyContext.isModalOpen]);
   return (
     <div>
       {dependencyContext.isModalOpen ? (
