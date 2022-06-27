@@ -1,4 +1,5 @@
 import { AllAppsContextProvider } from "../../contexts/all_apps/all_apps";
+import { DependencyContextProvider } from "../../contexts/dependencies/dependencies";
 import { Button } from "../general_components/button";
 import { Overlay } from "../general_components/create_new_app/Overlay";
 import { Form } from "../general_components/Form";
@@ -13,9 +14,11 @@ export const Console = () => {
   return (
     <div>
       <NavigationBar />
-      <AllAppsContextProvider>
-        <AllApps />
-      </AllAppsContextProvider>
+      <DependencyContextProvider>
+        <AllAppsContextProvider>
+          <AllApps />
+        </AllAppsContextProvider>
+      </DependencyContextProvider>
     </div>
   );
 };

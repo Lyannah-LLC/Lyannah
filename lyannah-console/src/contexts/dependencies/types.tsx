@@ -1,7 +1,8 @@
-export interface IAllApps {
+export interface IDependency {
   isLoading: boolean;
   isModalOpen: boolean;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  createNewApp: () => void;
+  createDependency: () => void;
+  editDependency: () => void;
 }

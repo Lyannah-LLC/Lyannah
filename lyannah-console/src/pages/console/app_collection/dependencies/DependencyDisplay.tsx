@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { DependencyContext } from "../../../../contexts/dependencies/dependencies";
 import { Button } from "../../../general_components/button";
 import { Form } from "../../../general_components/Form";
 import { Tag } from "../../all_apps/Tag";
@@ -5,9 +7,22 @@ import { DependencyTable } from "./DependencyTable";
 import { EditDependency } from "./EditDependency";
 
 export const DependenciesDisplay = () => {
+  const dependencyContext = useContext(DependencyContext);
+
+  const buttonHandler = () => {
+    dependencyContext.setIsModalOpen(true);
+    console.log("Working");
+    console.log(dependencyContext.isModalOpen);
+  };
+
+  const closeModal = () => {
+    dependencyContext.setIsModalOpen(false);
+  };
   return (
-    <>
-      {/* <EditDependency /> */}
+    <div>
+      {dependencyContext.isModalOpen ? (
+        <EditDependency onCloseModal={closeModal} onSave={closeModal} />
+      ) : null}
       <div className="ml-64 2xl:ml-96 w-full">
         <div className="mainScreen h-screen w-full max-w-screen-2xl  m-auto px-10 pt-12">
           <div className="flex justify-between ">
@@ -35,9 +50,9 @@ export const DependenciesDisplay = () => {
               <Button title="Create Dependency" />
             </div>
           </div>
-          <DependencyTable />
+          <DependencyTable onClick={buttonHandler} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
