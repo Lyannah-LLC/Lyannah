@@ -11,7 +11,7 @@ export const SignUp = (props: any) => {
       <div className={`md:w-8/12  flex`}>
         <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
           <img src="../images/logo_black.svg" className="h-12 self-start" />
-          <p className="text-lg font-semibold mt-[4rem] mb-[1rem] text-[#333333] text-[24px]">
+          <p className="font-semibold mt-[4rem] mb-[1rem] text-[#333333] text-[24px]">
             Let's get you in
           </p>
           <SocialAuthButton
@@ -50,42 +50,4 @@ export const SignUp = (props: any) => {
   );
 };
 
-{
-  /*
-     <div
-        className="text-xl flex justify-between items-center md:flex-row  flex-col"
-      >
-        <div className={`md:w-8/12  flex `}>
-          <div
-            className={`w-full my-16  inline-flex flex-col   p-6 ${classes.formBox}`}
-          >
-            <img
-              src="../images/logo_black.svg"
-              className="h-12 self-start"
-            ></img>
-            <p className="text-lg font-semibold my-4">Let's get you in</p>
-            <SocialAuthButton
-              buttonTitle="Signup with Github"
-              iconName="github.svg"
-            />
-            <SocialAuthButton
-              buttonTitle="Signup with Google"
-              iconName="google.svg"
-            />
-            <p className="text-lg font-semibold my-4">Or</p>
-            <Form placeHolder="Email" />
-            <Form placeHolder="Full Name" />
-            <Form placeHolder="Password" />
-            <Form placeHolder="Confirm Password" />
-            <Form placeHolder="Business Type" />
-            <Button title="Create Account" />
-            <Link to="/login">
-              <p className={`text-center text-sm font-bold  ${classes.color}`}>
-                Login instead ?
-              </p>
-            </Link>
-          </div>
-        </div>
-        <AuthLanding />
-      </div> */
-}
+
