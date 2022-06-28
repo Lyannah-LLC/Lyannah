@@ -31,7 +31,7 @@ export const AllApps = () => {
           onCloseModal={closeModal}
         />
       ) : null}
-        <div className="">
+        <div className="py-[2rem] px-[5rem]">
           <div className="md:flex justify-between ">
             <p className="self-center text-lg font-bold">All your apps</p>
             <Button title="New App" width="contain" onClick={buttonHandler} />

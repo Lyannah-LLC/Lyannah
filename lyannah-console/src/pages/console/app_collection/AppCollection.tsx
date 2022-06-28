@@ -10,10 +10,10 @@ import { SideBar } from "./side_bar/SideBar";
 export const AppCollection = (props: any) => {
   return (
     <DependencyContextProvider>
-      <>
+      <div className="relative">
         {/* Edit dependency overlay below */}
         {/* <EditDependency /> */}
-        <div className="mt-16">
+        <div className="absolute top-[3rem]">
           <div className={`${classes.fixedNav}`}>
             <NavigationBar />
           </div>
@@ -23,7 +23,7 @@ export const AppCollection = (props: any) => {
             <DependenciesDisplay />
           </div>
         </div>
-      </>
+      </div>
     </DependencyContextProvider>
   );
 };
