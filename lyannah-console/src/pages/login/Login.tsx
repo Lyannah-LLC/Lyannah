@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export const Login = (props: any) => {
   return (
-    <div className="text-xl flex justify-between items-center md:flex-row">
+    <div className="text-xl flex justify-between items-center md:flex-row login">
       <div className={`md:w-8/12  flex`}>
         <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
           <img src="../images/logo_black.svg" className="h-12 self-start" />
@@ -27,7 +27,9 @@ export const Login = (props: any) => {
           <Form placeHolder="Password" type="password" />
           <div className="mt-[1rem]">
             <Link to="/forgot-password">
-              <p className={`text-right text-sm font-bold underline ${classes.color}`}>
+              <p
+                className={`text-right text-sm font-bold underline ${classes.color}`}
+              >
                 Forgot Password ?
               </p>
             </Link>
@@ -36,13 +38,15 @@ export const Login = (props: any) => {
             <Button title="Login" />
           </Link>
           <Link to="/register">
-            <p className={`text-center text-sm font-bold underline ${classes.color}`}>
+            <p
+              className={`text-center text-sm font-bold underline ${classes.color}`}
+            >
               Create an account instead
             </p>
           </Link>
         </div>
       </div>
-      <AuthLanding />
+        <AuthLanding />
     </div>
   );
 };

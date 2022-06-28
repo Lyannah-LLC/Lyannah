@@ -20,3 +20,14 @@ code {
     monospace;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+  .login,
+  .sign-up,
+  .forgotten-password,
+  .reset-password {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

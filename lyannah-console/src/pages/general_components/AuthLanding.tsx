@@ -1,7 +1,7 @@
 import "./AuthLanding.css";
 export const AuthLanding = () => {
   return (
-    <div className=" w-full md:flex justify-center items-start relative hidden">
+    <div className="w-full md:flex justify-center items-start relative hidden">
       <img src={`../images/blur-background.svg`} className="block" />
       <div className="absolute authLanding-mainHeader">
         <p className="font-semibold text-4xl">

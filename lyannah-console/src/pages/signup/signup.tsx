@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export const SignUp = (props: any) => {
   return (
-    <div className="text-xl flex justify-between items-center md:flex-row">
+    <div className="text-xl flex justify-between items-center md:flex-row sign-up">
       <div className={`md:w-8/12  flex`}>
         <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
           <img src="../images/logo_black.svg" className="h-12 self-start" />

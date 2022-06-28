@@ -8,7 +8,7 @@ import classes from "../login/Login.module.css";
 export const ForgotPassword = () => {
   return (
       <div
-        className="text-xl flex justify-between items-center md:flex-row"
+        className="text-xl flex justify-between items-center md:flex-row forgotten-password"
       >
         <div className={`md:w-8/12  flex `}>
           <div
