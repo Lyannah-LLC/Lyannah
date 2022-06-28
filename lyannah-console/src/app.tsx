@@ -6,6 +6,11 @@ import { CheckEmailForPassword } from "./pages/forogot_password/CheckEmail";
 import { ResetPassword } from "./pages/forogot_password/ResetPassword";
 import { Console } from "./pages/console/Console";
 import { AppCollection } from "./pages/console/app_collection/AppCollection";
+import { DependencyContextProvider } from "./contexts/dependencies/dependencies";
+import {
+  SideBarContext,
+  SideBarContextProvider,
+} from "./contexts/sideBar/sideBar";
 
 export const App = (props: any) => {
   return (
@@ -17,7 +22,14 @@ export const App = (props: any) => {
       <Route path="/verify-email" element={<CheckEmailForPassword />} />
       <Route path="/reset-password" element={<ResetPassword />} />
       <Route path="/console" element={<Console />} />
-      <Route path="/console/app-collection" element={<AppCollection />} />
+      <Route
+        path="/console/app-collection"
+        element={
+          <SideBarContextProvider>
+            <AppCollection />
+          </SideBarContextProvider>
+        }
+      />
     </Routes>
   );
 };

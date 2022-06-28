@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { DependenciesDisplay } from "../../pages/console/app_collection/dependencies/DependencyDisplay";
 import { SideBarComps } from "../../util/sideBarEnum";
 
 export const SideBarContext = createContext({

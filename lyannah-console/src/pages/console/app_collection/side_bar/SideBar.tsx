@@ -3,9 +3,14 @@ import classes from "../AppCollection.module.css";
 import { SideBarContents } from "./SideBarContents";
 import { useContext, useEffect } from "react";
 import { SideBarContext } from "../../../../contexts/sideBar/sideBar";
+import { DependenciesDisplay } from "../dependencies/DependencyDisplay";
+import { AnalyticsView } from "../analytics/Analytics";
+import { LogoutView } from "../logout/logout";
+import { SettingsView } from "../settings/settings";
 
 export const SideBar = (props: any) => {
-  const sideBarContext = useContext(SideBarContext);
+  const sideBarContext = props.context;
+
   const handleClick = (selectedNav: any) => {
     sideBarContext.setClickedNav(selectedNav);
   };

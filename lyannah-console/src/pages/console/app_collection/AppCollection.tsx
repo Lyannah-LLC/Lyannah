@@ -1,32 +1,48 @@
+import { useContext, useEffect } from "react";
 import { DependencyContextProvider } from "../../../contexts/dependencies/dependencies";
-import { SideBarContextProvider } from "../../../contexts/sideBar/sideBar";
-import { Overlay } from "../../general_components/create_new_app/Overlay";
-import { Form } from "../../general_components/Form";
+import { SideBarContext } from "../../../contexts/sideBar/sideBar";
+import { SideBarComps } from "../../../util/sideBarEnum";
 import { NavigationBar } from "../../general_components/NavigationBar";
 import classes from "./AppCollection.module.css";
 import { DependenciesDisplay } from "./dependencies/DependencyDisplay";
-import { EditDependency } from "./dependencies/EditDependency";
+import { LogoutView } from "./logout/logout";
+import { SettingsView } from "./settings/settings";
 import { SideBar } from "./side_bar/SideBar";
 
 export const AppCollection = (props: any) => {
+  console.log("This component was rebuilt");
+  const sideBarContext = useContext(SideBarContext);
+
+  const setView = () => {
+    console.log("The setView called");
+
+    if (sideBarContext.clickedNav == SideBarComps.Dependency) {
+      return <DependenciesDisplay />;
+    } else if (sideBarContext.clickedNav == SideBarComps.Analytics) {
+    } else if (sideBarContext.clickedNav == SideBarComps.Docs) {
+      return <DependenciesDisplay />;
+    } else if (sideBarContext.clickedNav == SideBarComps.Settings) {
+      return <SettingsView />;
+    } else if (sideBarContext.clickedNav == SideBarComps.Logout) {
+      return <LogoutView />;
+    }
+  };
+
   return (
     <>
-      <SideBarContextProvider>
-        <DependencyContextProvider>
-          {/* Edit dependency overlay below */}
-          {/* <EditDependency /> */}
-          <div className="mt-16">
-            <div className={`${classes.fixedNav}`}>
-              <NavigationBar />
-            </div>
-
-            <div className={`flex`}>
-              <SideBar />
-              <DependenciesDisplay />
-            </div>
+      <DependencyContextProvider>
+        <div className="mt-16">
+          <div className={`${classes.fixedNav}`}>
+            <NavigationBar />
           </div>
-        </DependencyContextProvider>
-      </SideBarContextProvider>
+
+          <div className={`flex`}>
+            <SideBar context={sideBarContext} />
+            {setView()}
+            {/* <DependenciesDisplay /> */}
+          </div>
+        </div>
+      </DependencyContextProvider>
     </>
   );
 };

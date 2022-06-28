@@ -1,3 +1,3 @@
 export const SettingsView = (props: any) => {
-  return <>this is the settings view</>;
+  return <div className="ml-64 2xl:ml-96 w-full">Settings View</div>;
 };
