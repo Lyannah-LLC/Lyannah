@@ -3,7 +3,7 @@
 export const NavigationBar = (props: any) => {
   return (
     <header
-      className={`$ w-full font-bold h-14 flex justify-between items-center flex-row md:text-lg text-sm bg-black px-[5rem]`}
+      className={`$ w-full font-bold h-14 flex justify-between items-center flex-row md:text-lg text-sm bg-black px-[5rem] navbar`}
     >
       <div className="logo">
         <img src="../images/logo.png" className="md:scale-100" />

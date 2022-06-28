@@ -20,6 +20,12 @@ code {
     monospace;
 }
 
+.mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 900px) {
   .login,
@@ -29,5 +35,21 @@ code {
     display: grid;
     grid-template-columns: 1fr;
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .consoles {
+    padding: 30px;
+  }
+  .mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .app-card {
+    width: 100%;
+  }
+  .navbar {
+    padding: 0 30px;
   }
 }
