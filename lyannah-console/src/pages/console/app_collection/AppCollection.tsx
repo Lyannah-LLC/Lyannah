@@ -18,7 +18,7 @@ export const AppCollection = (props: any) => {
             <NavigationBar />
           </div>
 
-          <div className={`flex`}>
+          <div className={`flex w-[100vw]`}>
             <SideBar />
             <DependenciesDisplay />
           </div>
