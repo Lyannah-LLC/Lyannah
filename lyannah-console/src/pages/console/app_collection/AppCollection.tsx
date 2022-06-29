@@ -40,8 +40,6 @@ export const AppCollection = (props: any) => {
           <div className={`${classes.fixedNav}`}>
             <NavigationBar />
           </div>
-
-
           <div className={`flex w-[100vw]`}>
             <SideBar />
             <DependenciesDisplay />
