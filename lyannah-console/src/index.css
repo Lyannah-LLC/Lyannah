@@ -53,3 +53,17 @@ code {
     padding: 0 30px;
   }
 }
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-padding {
+    width: 1500px;
+    height: auto;
+    margin-top: 5rem;
+  }
+}
