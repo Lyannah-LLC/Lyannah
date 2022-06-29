@@ -13,13 +13,16 @@ export const DependencyTable = (props: any) => {
           </tr>
         </thead>
         <tbody>
-          <tr className={`${classes.tableRow} py-4 px-4 text-sm`}>
+          <tr
+            className={`${classes.tableRow} py-4 px-4 text-sm`}
+            onClick={props.onClick}
+          >
             <td className="py-4 pl-4 font-bold">background-image-1 </td>
             <td className="truncate ... pr-8">
               https://www.pixabay.com/imagehttps://www.pixabay.com/imagehttps://www.pixabay.com/imagehttps://www.pixabay.com/image
             </td>
             <td className="text-ellipsis">https://www.pixabay.com/image</td>
-            {/* <td className="text-right">Edite</td> */}
+            {/* <td className="text-right">Edit</td> */}
           </tr>
           <tr className={`${classes.tableRow} py-4 px-4 text-sm `}>
             <td className="py-4 pl-4 font-bold ">background-image-1 </td>

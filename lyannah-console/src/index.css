@@ -13,3 +13,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.tag_green {
+  background-color: rgba(0, 165, 0, 0.25);
+  color: rgb(0, 120, 0);
+}
+
+.tag_blue {
+  background-color: rgba(0, 30, 165, 0.25);
+  color: rgb(0, 30, 165);
+}

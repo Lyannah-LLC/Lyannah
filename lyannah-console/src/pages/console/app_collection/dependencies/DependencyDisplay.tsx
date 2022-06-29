@@ -1,3 +1,5 @@
+import { useContext, useEffect } from "react";
+import { DependencyContext } from "../../../../contexts/dependencies/dependencies";
 import { Button } from "../../../general_components/button";
 import { Form } from "../../../general_components/Form";
 import { Tag } from "../../all_apps/Tag";
@@ -5,11 +7,27 @@ import { DependencyTable } from "./DependencyTable";
 import { EditDependency } from "./EditDependency";
 
 export const DependenciesDisplay = () => {
+  const dependencyContext = useContext(DependencyContext);
+
+  const buttonHandler = () => {
+    console.log(dependencyContext.isModalOpen);
+    dependencyContext.setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    dependencyContext.setIsModalOpen(false);
+  };
+
+  useEffect(() => {
+    console.log(dependencyContext.isModalOpen);
+  }, [dependencyContext.isModalOpen]);
   return (
-    <>
-      {/* <EditDependency /> */}
-      <div className="ml-64 2xl:ml-96 w-full">
-        <div className="mainScreen h-screen w-full max-w-screen-2xl  m-auto px-10 pt-12">
+    <div className="w-full">
+      {dependencyContext.isModalOpen ? (
+        <EditDependency onCloseModal={closeModal} onSave={closeModal} />
+      ) : null}
+      <div className="ml-64 2xl:ml-96  ">
+        <div className="mainScreen h-screen w-full max-w-screen-2xl m-auto px-10 pt-12 ">
           <div className="flex justify-between ">
             <p className="text-3xl font-bold">Qollect</p>
             <Tag title="28 Dependencies" />
@@ -35,9 +53,9 @@ export const DependenciesDisplay = () => {
               <Button title="Create Dependency" />
             </div>
           </div>
-          <DependencyTable />
+          <DependencyTable onClick={buttonHandler} />
         </div>
       </div>
-    </>
+    </div>
   );
 };

@@ -5,8 +5,12 @@ import classes from "./Overlay.module.css";
 export const Overlay = (props: any) => {
   return (
     <>
-      <div className={`${classes.overlay}`} />
-      <ModalCard title={props.title} child={<>{props.child}</>} />
+      <div className={`${classes.overlay} backdrop-blur-lg`} />
+      <ModalCard
+        title={props.title}
+        onCloseModal={props.onCloseModal}
+        child={<>{props.child}</>}
+      />
     </>
   );
 };
