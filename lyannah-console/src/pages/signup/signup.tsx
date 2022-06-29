@@ -1,4 +1,5 @@
 import { AuthLanding } from "../general_components/AuthLanding";
+import { BoxPadding } from "../general_components/BoxPadding";
 import { Button } from "../general_components/button";
 import { Form } from "../general_components/Form";
 import { SocialAuthButton } from "../general_components/SocialAuthButton";
@@ -7,6 +8,7 @@ import { Link } from "react-router-dom";
 
 export const SignUp = (props: any) => {
   return (
+    <BoxPadding>
       <div className="text-xl flex justify-between items-center md:flex-row sign-up">
         <div className={`md:w-8/12  flex`}>
           <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
@@ -49,5 +51,6 @@ export const SignUp = (props: any) => {
         </div>
         <AuthLanding />
       </div>
+    </BoxPadding>
   );
 };
