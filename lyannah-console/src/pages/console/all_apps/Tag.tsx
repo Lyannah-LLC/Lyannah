@@ -1,5 +1,6 @@
 export const Tag = (props: any) => {
   return (
+
     <div
       className={`p-2  rounded-full inline-block ${
         props.color === "green"
@@ -10,6 +11,7 @@ export const Tag = (props: any) => {
       } `}
     >
       <p className="text-xs">{props.title}</p>
+
     </div>
   );
 };

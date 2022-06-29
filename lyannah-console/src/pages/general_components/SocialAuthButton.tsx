@@ -1,12 +1,12 @@
-import "./SocialAuthButton.module.css";
+
 export const SocialAuthButton = (props: any) => {
   return (
     <div
-      className="flex w-full justify-between rounded-md border-black items-center border px-8 my-6 hover:bg-green-100 
-    duration-300 socialButtonAuth w-full cursor: pointer "
+      className="w-full rounded-[10px] border-[#999] border my-6 hover:bg-green-100 
+    duration-300 socialButtonAuth cursor-pointer flex justify-start items-center py-[10px] px-[20px]"
     >
-      <img src={`../images/${props.iconName}`} className="h-6 mx-8"></img>
-      <p className="text-sm my-2">{props.buttonTitle}</p>
+      <img src={`../images/${props.iconName}`} className="h-6" />
+      <p className="text-[16px] ml-[5rem]">{props.buttonTitle}</p>
     </div>
   );
 };

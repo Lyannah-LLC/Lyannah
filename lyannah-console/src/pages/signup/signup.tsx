@@ -9,18 +9,13 @@ import { Link } from "react-router-dom";
 export const SignUp = (props: any) => {
   return (
     <BoxPadding>
-      <div
-        className={`box-border text-xl flex md:flex-row  flex-col  ${classes.parent}  `}
-      >
-        <div className={`md:w-8/12  flex `}>
-          <div
-            className={`w-full my-16  inline-flex flex-col   p-6 ${classes.formBox}`}
-          >
-            <img
-              src="../images/logo_black.svg"
-              className="h-12 self-start"
-            ></img>
-            <p className="text-lg font-semibold my-4">Let's get you in</p>
+      <div className="text-xl flex justify-between items-center md:flex-row sign-up">
+        <div className={`md:w-8/12  flex`}>
+          <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
+            <img src="../images/logo_black.svg" className="h-12 self-start" />
+            <p className="font-semibold mt-[4rem] mb-[1rem] text-[#333333] text-[24px]">
+              Let's get you in
+            </p>
             <SocialAuthButton
               buttonTitle="Signup with Github"
               iconName="github.svg"
@@ -29,18 +24,29 @@ export const SignUp = (props: any) => {
               buttonTitle="Signup with Google"
               iconName="google.svg"
             />
-            <p className="text-lg font-semibold my-4">Or</p>
-            <Form placeHolder="Email" />
+            <p className="text-[24px] font-semibold text-center my-4">or</p>
+            <Form placeHolder="Email" type="email" />
             <Form placeHolder="Full Name" />
-            <Form placeHolder="Password" />
-            <Form placeHolder="Confirm Password" />
+            <Form placeHolder="Password" type="password" />
+            <Form placeHolder="Confirm Password" type="password" />
             <Form placeHolder="Business Type" />
-            <Button title="Create Account" />
+            <Button title="Create Account" type="text" />
             <Link to="/login">
-              <p className={`text-center text-sm font-bold  ${classes.color}`}>
+              <p
+                className={`text-center text-sm font-bold underline  ${classes.color}`}
+              >
                 Login instead ?
               </p>
             </Link>
+            <div className="mt-[1rem]">
+              <Link to="/forgot-password">
+                <p
+                  className={`text-center text-sm font-bold underline ${classes.color}`}
+                >
+                  Forgot Password ?
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
         <AuthLanding />
