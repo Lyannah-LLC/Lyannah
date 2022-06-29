@@ -8,14 +8,18 @@ import classes from "../login/Login.module.css";
 export const CheckEmailForPassword = () => {
   return (
     <BoxPadding>
-      <div className="text-xl flex justify-between items-center md:flex-row">
+      <div
+        className={`box-border text-xl flex md:flex-row  flex-col  ${classes.parent}  `}
+      >
         <div className={`md:w-8/12  flex `}>
-          <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
+          <div
+            className={`w-full my-16  inline-flex flex-col   p-6 ${classes.formBox}`}
+          >
             <img
               src="../images/logo_black.svg"
               className="h-12 self-start"
             ></img>
-            <p className="font-semibold mt-[4rem] mb-[1rem] text-[#333333] text-[16px]">
+            <p className="text-lg font-semibold my-4">
               Make sure you don’t forget next time 😒
             </p>
             <p className="text-md my-4">
@@ -26,10 +30,13 @@ export const CheckEmailForPassword = () => {
               <Button title="Go back to login" />
             </Link>
             <Link to="/register">
-              <p
-                className={`text-center text-sm font-bold underline mt-[1rem] ${classes.color}`}
-              >
+              <p className={`text-center text-sm font-bold  ${classes.color}`}>
                 Create an account
+              </p>
+            </Link>
+            <Link to="/login">
+              <p className={`text-center text-sm font-bold  ${classes.color}`}>
+                Login
               </p>
             </Link>
           </div>
