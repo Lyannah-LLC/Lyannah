@@ -41,10 +41,10 @@ export const AppCollection = (props: any) => {
             <NavigationBar />
           </div>
 
-          <div className={`flex`}>
-            <SideBar context={sideBarContext} />
-            {setView()}
-            {/* <DependenciesDisplay /> */}
+
+          <div className={`flex w-[100vw]`}>
+            <SideBar />
+            <DependenciesDisplay />
           </div>
         </div>
       </div>

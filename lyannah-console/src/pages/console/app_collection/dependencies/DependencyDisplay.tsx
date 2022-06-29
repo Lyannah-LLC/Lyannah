@@ -27,9 +27,8 @@ export const DependenciesDisplay = () => {
         <EditDependency onCloseModal={closeModal} onSave={closeModal} />
       ) : null}
 
-      <div className="ml-64 2xl:ml-96  ">
-        <div className="mainScreen h-screen w-full max-w-screen-2xl m-auto px-10 pt-12 ">
-
+      <div className="ml-64 2xl:ml-96 w-[100vw]">
+        <div className="mainScreen h-screen w-full max-w-screen-2xl  m-auto px-10 pt-12">
           <div className="flex justify-between ">
             <p className="text-3xl font-bold">Qollect</p>
             <Tag title="28 Dependencies" />
