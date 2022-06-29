@@ -6,6 +6,7 @@ import { NavigationBar } from "../../general_components/NavigationBar";
 import { AnalyticsView } from "./analytics/Analytics";
 import classes from "./AppCollection.module.css";
 import { DependenciesDisplay } from "./dependencies/DependencyDisplay";
+import { SDKsView } from "./SDKs/SDKs";
 import { LogoutView } from "./logout/logout";
 import { SettingsView } from "./settings/settings";
 import { SideBar } from "./side_bar/SideBar";
@@ -21,8 +22,8 @@ export const AppCollection = (props: any) => {
       return <DependenciesDisplay />;
     } else if (sideBarContext.clickedNav === SideBarComps.Analytics) {
       return <AnalyticsView />;
-    } else if (sideBarContext.clickedNav === SideBarComps.Docs) {
-      return <DependenciesDisplay />;
+    } else if (sideBarContext.clickedNav === SideBarComps.SDKs) {
+      return <SDKsView logoUrl="../images/flutter.svg" />;
     } else if (sideBarContext.clickedNav === SideBarComps.Settings) {
       return <SettingsView />;
     } else if (sideBarContext.clickedNav === SideBarComps.Logout) {

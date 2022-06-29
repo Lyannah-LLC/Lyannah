@@ -44,10 +44,10 @@ export const SideBar = (props: any) => {
       />
       <SideBarContents
         icon="doc.svg"
-        title="Docs"
-        isActive={sideBarContext.clickedNav == SideBarComps.Docs ? true : false}
+        title="SDKs"
+        isActive={sideBarContext.clickedNav == SideBarComps.SDKs ? true : false}
         onClick={() => {
-          handleClick(SideBarComps.Docs);
+          handleClick(SideBarComps.SDKs);
         }}
       />
       <SideBarContents
