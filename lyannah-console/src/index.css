@@ -20,6 +20,7 @@ code {
     monospace;
 }
 
+
 .mobile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -60,4 +61,5 @@ code {
     width: 1500px;
     margin: 0 auto;
   }
+
 }

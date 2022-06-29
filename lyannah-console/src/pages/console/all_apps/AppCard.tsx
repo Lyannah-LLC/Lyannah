@@ -29,5 +29,6 @@ export const AppCard = (props: any) => {
         </Link>
       ))}
     </>
+
   );
 };
