@@ -9,7 +9,8 @@ import { LogoutView } from "../logout/logout";
 import { SettingsView } from "../settings/settings";
 
 export const SideBar = (props: any) => {
-  const sideBarContext = props.context;
+  // const sideBarContext = props.context;
+  const sideBarContext = useContext(SideBarContext);
 
   const handleClick = (selectedNav: any) => {
     sideBarContext.setClickedNav(selectedNav);

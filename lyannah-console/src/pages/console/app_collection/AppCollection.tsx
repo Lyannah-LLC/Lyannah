@@ -3,6 +3,7 @@ import { DependencyContextProvider } from "../../../contexts/dependencies/depend
 import { SideBarContext } from "../../../contexts/sideBar/sideBar";
 import { SideBarComps } from "../../../util/sideBarEnum";
 import { NavigationBar } from "../../general_components/NavigationBar";
+import { AnalyticsView } from "./analytics/Analytics";
 import classes from "./AppCollection.module.css";
 import { DependenciesDisplay } from "./dependencies/DependencyDisplay";
 import { LogoutView } from "./logout/logout";
@@ -16,14 +17,15 @@ export const AppCollection = (props: any) => {
   const setView = () => {
     console.log("The setView called");
 
-    if (sideBarContext.clickedNav == SideBarComps.Dependency) {
+    if (sideBarContext.clickedNav === SideBarComps.Dependency) {
       return <DependenciesDisplay />;
-    } else if (sideBarContext.clickedNav == SideBarComps.Analytics) {
-    } else if (sideBarContext.clickedNav == SideBarComps.Docs) {
+    } else if (sideBarContext.clickedNav === SideBarComps.Analytics) {
+      return <AnalyticsView />;
+    } else if (sideBarContext.clickedNav === SideBarComps.Docs) {
       return <DependenciesDisplay />;
-    } else if (sideBarContext.clickedNav == SideBarComps.Settings) {
+    } else if (sideBarContext.clickedNav === SideBarComps.Settings) {
       return <SettingsView />;
-    } else if (sideBarContext.clickedNav == SideBarComps.Logout) {
+    } else if (sideBarContext.clickedNav === SideBarComps.Logout) {
       return <LogoutView />;
     }
   };
