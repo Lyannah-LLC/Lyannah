@@ -41,7 +41,7 @@ export const AppCollection = (props: any) => {
             <NavigationBar />
           </div>
 
-          <div className={`flex`}>
+          <div className={`flex w-[100vw] bg-blue-red`}>
             <SideBar context={sideBarContext} />
             {setView()}
             {/* <DependenciesDisplay /> */}
