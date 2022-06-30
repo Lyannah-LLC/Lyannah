@@ -37,7 +37,6 @@ export const AppCollection = (props: any) => {
         {/**  Edit dependency overlay below **/}
         {/* <EditDependency /> */}
         <div className="absolute top-[3rem]">
-
           <div className={`${classes.fixedNav}`}>
             <NavigationBar />
           </div>
@@ -48,7 +47,7 @@ export const AppCollection = (props: any) => {
             {/* <DependenciesDisplay /> */}
           </div>
         </div>
-      </DependencyContextProvider>
-    </>
+      </div>
+    </DependencyContextProvider>
   );
 };
