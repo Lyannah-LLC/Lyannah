@@ -1,16 +1,13 @@
+.parent {
+  width: 100%;
+  margin: 0px auto;
+  /* background-color: red; */
+}
 .formBox {
   margin: 50px auto;
   /* padding: 0px 0px 0px 10px; */
-  width: 370px;
 }
 
 .color {
   color: #5d5fef;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .formBox {
-    width: 100%;
-  }
 }

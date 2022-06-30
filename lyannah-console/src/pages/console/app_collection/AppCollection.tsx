@@ -32,26 +32,28 @@ export const AppCollection = (props: any) => {
   };
 
   return (
-
     <DependencyContextProvider>
       <div className="relative">
-        {/* Edit dependency overlay below */}
+        {/**  Edit dependency overlay below **/}
         {/* <EditDependency /> */}
         <div className="absolute top-[3rem]">
-
           <div className={`${classes.fixedNav}`}>
             <NavigationBar />
           </div>
 
 
+
           <div className={`flex w-[100vw]`}>
+
             <SideBar context={sideBarContext} />
             {setView()}
             {/* <DependenciesDisplay /> */}
           </div>
         </div>
+
         </div>
       </DependencyContextProvider>
+
 
   );
 };
