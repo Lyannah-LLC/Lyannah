@@ -11,7 +11,7 @@ export const AppCollection = (props: any) => {
   return (
     <DependencyContextProvider>
       <div className="relative">
-        {/* Edit dependency overlay below */}
+        {/**  Edit dependency overlay below **/}
         {/* <EditDependency /> */}
         <div className="absolute top-[3rem]">
           <div className={`${classes.fixedNav}`}>
