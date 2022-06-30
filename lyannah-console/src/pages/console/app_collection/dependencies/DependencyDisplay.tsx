@@ -30,7 +30,7 @@ export const DependenciesDisplay = () => {
         <div className="mainScreen h-screen w-full max-w-screen-2xl m-auto px-10 pt-12 ">
           <div className="flex justify-between ">
             <p className="text-3xl font-bold">Qollect</p>
-            <Tag title="28 Dependencies" />
+            <Tag title="28 Dependencies" color="blue" />
           </div>
           <p className="text-xl font-bold mt-10">Create Dependency</p>
 

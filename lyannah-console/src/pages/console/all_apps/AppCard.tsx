@@ -10,7 +10,7 @@ export const AppCard = (props: any) => {
         onClick={props.onClick}
       >
         <div className="flex justify-between items-center">
-          <Tag title="23 dependencies" color="blue" />
+          <Tag title={props.dependencies + " dependencies"} color="blue" />
           {/* <img src="../images/more.svg" /> */}
         </div>
         <p className="font-bold mb-2 mt-8">Qollect</p>
