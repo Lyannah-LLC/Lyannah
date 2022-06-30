@@ -50,8 +50,8 @@ export const AppCollection = (props: any) => {
             {/* <DependenciesDisplay /> */}
           </div>
         </div>
+        </div>
       </DependencyContextProvider>
-    </>
 
   );
 };
