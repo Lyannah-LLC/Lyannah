@@ -1,3 +1,4 @@
+import { BoxPadding } from "../../general_components/BoxPadding";
 import { Button } from "../../general_components/button";
 import { AppCard } from "./AppCard";
 import { useContext } from "react";
@@ -31,15 +32,18 @@ export const AllApps = () => {
           onCloseModal={closeModal}
         />
       ) : null}
-        <div className="py-[2rem] px-[5rem] consoles">
+      <BoxPadding>
+        <div className="">
           <div className="md:flex justify-between ">
             <p className="self-center text-lg font-bold">All your apps</p>
             <Button title="New App" width="contain" onClick={buttonHandler} />
           </div>
-          <div className="mobile">
+          <div className="md:flex gap-8 ">
             <AppCard onClick={() => {}} />
+            <AppCard />
           </div>
         </div>
+      </BoxPadding>
     </div>
   );
 };

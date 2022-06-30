@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
@@ -20,44 +14,12 @@ code {
     monospace;
 }
 
-.mobile {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+.tag_green {
+  background-color: rgba(0, 165, 0, 0.25);
+  color: rgb(0, 120, 0);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 900px) {
-  .login,
-  .sign-up,
-  .forgotten-password,
-  .reset-password {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .consoles {
-    padding: 30px;
-  }
-  .mobile {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-  .app-card {
-    width: 100%;
-  }
-  .navbar {
-    padding: 0 30px;
-  }
-}
-
-/* Extra large devices (desktops, 1500px and up) */
-@media only screen and (min-width: 1500px) {
-  .consoles {
-    width: 1500px;
-    margin: 0 auto;
-  }
+.tag_blue {
+  background-color: rgba(0, 30, 165, 0.25);
+  color: rgb(0, 30, 165);
 }
