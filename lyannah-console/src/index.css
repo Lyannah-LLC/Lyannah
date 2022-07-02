@@ -64,3 +64,17 @@ code {
   background-color: rgba(0, 30, 165, 0.25);
   color: rgb(0, 30, 165);
 }
+
+.gcolor-blue-10 {
+  color: #f1f1fe;
+}
+
+.gbg-blue-10 {
+  background-color: #f1f1fe;
+}
+.gbg-blue-30 {
+  background-color: #c3c3f9;
+}
+.gbg-green {
+  background-color: #28b851;
+}
