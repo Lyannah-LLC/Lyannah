@@ -1,4 +1,4 @@
-# Lyannah(beta)
+# Lyannah(alpha)
 <hr/>
 
 >**An open source developer tool that provides an environment to manage the resources for your applications without having to rebuild or deploy.**
