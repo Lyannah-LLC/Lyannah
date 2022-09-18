@@ -4,8 +4,8 @@ export const Button = (props: any) => {
   return (
     <button
       type="submit"
-      className={`py-4 px-10 rounded-[10px] font-bold md:flex-grow-0 flex-grow hover:opacity-80 transition-opacity duration-150 ${
-        props.buttonType == ButtonTypes.negative ? "bg-red-700" : "bg-black"
+      className={`py-2 px-2 rounded-[4px] font-regular md:flex-grow-0 flex-grow text-xs hover:opacity-80 transition-opacity duration-150 ${
+        props.buttonType == ButtonTypes.negative ? "bg-red-700" : "bg-blue-700"
       } 
      
       ${

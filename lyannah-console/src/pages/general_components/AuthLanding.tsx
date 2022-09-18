@@ -7,7 +7,7 @@ export const AuthLanding = () => {
         <p className="text-lg font-semibold my-4  text-4xl">
           Ship Dynamic Apps without Redployment
         </p>
-        <p className="text-lg text-black  ">
+        <p className="text-lg text-white  ">
           Shipping apps have never been easier than they are today.
         </p>
       </div>

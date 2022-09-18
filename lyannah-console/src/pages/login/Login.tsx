@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 export const Login = (props: any) => {
   return (
     <BoxPadding>
-      <div className="text-xl flex justify-between items-center md:flex-row login">
+      <div className="text-xl flex justify-between items-center md:flex-row login text-white">
         <div className={`md:w-8/12  flex`}>
           <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
             <img src="../images/logo_black.svg" className="h-12 self-start" />
-            <p className="text-lg font-semibold mt-[4rem] mb-[1rem] text-[#333333] text-[24px]">
+            <p className="text-lg font-semibold mt-[4rem] mb-[1rem]  text-[24px]">
               Let's get you in
             </p>
             <SocialAuthButton
