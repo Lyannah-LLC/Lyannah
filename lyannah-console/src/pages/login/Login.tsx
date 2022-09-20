@@ -13,7 +13,7 @@ export const Login = (props: any) => {
         <div className={`md:w-8/12  flex`}>
           <div className={`w-full inline-flex flex-col ${classes.formBox}`}>
             <img src="../images/logo_black.svg" className="h-12 self-start" />
-            <p className="text-lg font-semibold mt-[4rem] mb-[1rem]  text-[24px]">
+            <p className="text-lg font-semibold mt-[4rem] mb-[1rem]  text-[24px] text-white">
               Let's get you in
             </p>
             <SocialAuthButton
@@ -30,7 +30,7 @@ export const Login = (props: any) => {
             <div className="mt-[1rem]">
               <Link to="/forgot-password">
                 <p
-                  className={`text-right text-sm font-bold underline ${classes.color}`}
+                  className={`text-right text-sm font-bold underline text-lemon-100`}
                 >
                   Forgot Password ?
                 </p>
@@ -41,7 +41,7 @@ export const Login = (props: any) => {
             </Link>
             <Link to="/register">
               <p
-                className={`text-center text-sm font-bold underline ${classes.color}`}
+                className={`text-center text-sm font-bold underline text-lemon-100`}
               >
                 Create an account instead
               </p>

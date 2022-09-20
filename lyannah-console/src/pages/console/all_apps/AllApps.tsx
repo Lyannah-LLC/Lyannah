@@ -57,7 +57,9 @@ export const AllApps = () => {
       <BoxPadding>
         <div className="">
           <div className="md:flex justify-between ">
-            <p className="self-center text-lg font-bold">All your apps</p>
+            <p className="self-center text-lg font-bold text-white">
+              All your apps
+            </p>
             <Button title="New App" width="contain" onClick={buttonHandler} />
           </div>
           <div className="md:flex gap-8 ">

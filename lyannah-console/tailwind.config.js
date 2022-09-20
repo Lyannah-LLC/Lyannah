@@ -1,37 +1,47 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    // colors: {
-    //   "green-200": "#5D5FEF",
-    // },
     extend: {},
-  },
-  colors: {
-    white: colors.white,
-    black: colors.black,
-    grey: colors.gray,
-    purple: {
-      400: "#623B82",
-      800: "#372868",
-      850: "#261854",
-      900: "#1C1044",
-      deepPurple: "#450A54",
-      neutralPurple: "#623B82",
-      mildPurple: "#CBBCFF",
+    colors: {
+      white: colors.white,
+      black: colors.black,
+      danger: colors.black,
+      success: colors.black,
+      link: colors.black,
+      overlay: colors.black,
+      black: colors.black,
+      grey: colors.gray,
+      lemon: {
+        800: "#293D2F",
+        100: "#28B851",
+        50: "#92E7AA",
+      },
+      iris: {
+        350: "#5d5fef",
+        750: "#090A5D",
+      },
+      grey: {
+        900: "#232323",
+        950: "#1A1A1A",
+        650: "#555555",
+      },
     },
-    accent: {
-      deepRed: "#4B1130",
-      aqua: "#4DEEEC",
-      tealGreen: "#184254",
-      blue: "#005DB3",
-    },
-    gray: {
-      950: "#141414",
-      800: "#191919",
-    },
-    green: {
-      950: "#002706",
-      700: "#218B06",
+    fontSize: {
+      xs: ".68rem",
+      sm: ".875rem",
+      tiny: ".975rem",
+      button: ".9rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "5rem",
     },
   },
   plugins: [],

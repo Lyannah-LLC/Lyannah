@@ -29,12 +29,12 @@ export const ResetPassword = (props: any) => {
               <Button title="Reset" />
             </Link>
             <Link to="/register">
-              <p className={`text-center text-sm font-bold  ${classes.color}`}>
+              <p className={`text-center text-sm font-bold  text-lemon-100`}>
                 Create an account
               </p>
             </Link>
             <Link to="/forgot-password">
-              <p className={`text-center text-sm font-bold  ${classes.color}`}>
+              <p className={`text-center text-sm font-bold text-lemon-100`}>
                 Forgot Password
               </p>
             </Link>

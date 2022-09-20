@@ -29,14 +29,14 @@ export const ForgotPassword = () => {
             </Link>
             <Link to="/login">
               <p
-                className={`text-center text-sm font-bold underline ${classes.color}`}
+                className={`text-center text-sm font-bold underline text-lemon-100`}
               >
                 Login Instead
               </p>
             </Link>
             <Link to="/register">
               <p
-                className={`text-center text-sm font-bold mt-[1rem] underline ${classes.color}`}
+                className={`text-center text-sm font-bold mt-[1rem] underline text-lemon-100`}
               >
                 Create an account
               </p>
