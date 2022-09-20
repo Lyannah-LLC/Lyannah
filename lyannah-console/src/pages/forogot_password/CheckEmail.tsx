@@ -27,7 +27,7 @@ export const CheckEmailForPassword = () => {
             </Link>
             <Link to="/register">
               <p
-                className={`text-center text-sm font-bold underline mt-[1rem] ${classes.color}`}
+                className={`text-center text-sm font-bold underline mt-[1rem] text-lemon-100`}
               >
                 Create an account
               </p>

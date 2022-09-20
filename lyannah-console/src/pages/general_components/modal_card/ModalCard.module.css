@@ -1,6 +1,6 @@
 .modalCard {
   border-radius: 20px;
-  background-color: white;
+  /* background-color: white; */
   /* max-width: 400px; */
   flex-basis: 500px;
 }

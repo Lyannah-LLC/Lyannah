@@ -14,7 +14,7 @@ export const AppCard = (props: any) => {
           {/* <img src="../images/more.svg" /> */}
         </div>
         <p className="font-bold mb-2 mt-8">Qollect</p>
-        <p className="text-xs text-gray-400">Last Modified</p>
+        <p className="text-xs text-grey-650">Last Modified</p>
       </div>
     </Link>
   );

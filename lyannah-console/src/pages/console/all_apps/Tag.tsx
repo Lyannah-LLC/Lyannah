@@ -1,15 +1,15 @@
 export const Tag = (props: any) => {
   return (
     <div
-      className={`p-2  rounded-full inline-block ${
+      className={`px-2 py-1   rounded-full inline-block ${
         props.color === "green"
-          ? "tag_green"
+          ? "bg-lemon-100"
           : props.color === "blue"
-          ? "tag_blue"
+          ? "bg-lemon-800"
           : null
       } `}
     >
-      <p className="text-xs">{props.title}</p>
+      <p className="text-xs text-white">{props.title}</p>
     </div>
   );
 };
