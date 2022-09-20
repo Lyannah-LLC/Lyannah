@@ -1,6 +1,6 @@
 .dependencyTable {
   border-radius: 300px;
-  background-color: #f1f1fe;
+  /* background-color: #f1f1fe; */
 }
 .tableRow {
   border-bottom: 1px solid lightgrey;
@@ -9,6 +9,6 @@
 
 .tableRow:hover {
   border-bottom: 1px solid lightgrey;
-  background-color: #d1d1ff;
+  background-color: #151515;
   cursor: pointer;
 }

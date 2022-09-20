@@ -29,25 +29,29 @@ export const DependenciesDisplay = () => {
       ) : null}
 
       <ConsoleWrapper>
-        <div className="flex justify-between ">
-          <p className="text-3xl font-bold">Qollect</p>
+        <div className=" justify-between ">
+          <p className="text-3xl font-bold text-white">Qollect</p>
           <Tag title="28 Dependencies" color="blue" />
         </div>
-        <p className="text-xl font-bold mt-10">Create Dependency</p>
+        <p className="text-xl font-bold mt-10 text-grey-500">
+          Create Dependency
+        </p>
 
         <div className="flex gap-4 m">
           <div className="w-full">
-            <p className="text-sm font-medium my-4 text-gray-500">Key</p>
+            <p className="text-sm font-medium my-4 text-grey-650">Key</p>
             <Form placeHolder="background-image" />
           </div>
           <div className="w-full">
-            <p className="text-sm font-medium my-4 text-gray-500">Dev Value</p>
+            <p className="text-sm font-medium my-4 text-grey-650">Dev Value</p>
             <Form placeHolder="https://myserver/live.jpg" />
           </div>
-          <div className="w-full">
-            <p className="text-sm font-medium my-4 text-gray-500">Live Value</p>
+          <div className="w-full ">
+            <p className="text-sm font-medium my-4 text-grey-650">Live Value</p>
             <Form placeHolder="https://myserver/test.jpg" />
-            <Button title="Create Dependency" />
+            <div className="float-right">
+              <Button title="Create Dependency" width="contain" />
+            </div>
           </div>
         </div>
         <DependencyTable onClick={buttonHandler} />

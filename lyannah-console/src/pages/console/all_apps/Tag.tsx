@@ -9,7 +9,7 @@ export const Tag = (props: any) => {
           : null
       } `}
     >
-      <p className="text-xs">{props.title}</p>
+      <p className="text-xs text-white">{props.title}</p>
     </div>
   );
 };
