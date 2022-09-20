@@ -14,7 +14,7 @@ export const DependencyTable = (props: any) => {
         </thead>
         <tbody className="text-white">
           <tr
-            className={`${classes.tableRow} py-4 px-4 text-sm`}
+            className={`${classes.tableRow} py-4 px-4 text-[.8rem]`}
             onClick={props.onClick}
           >
             <td className="py-4 pl-4 font-bold">background-image-1 </td>
@@ -24,12 +24,12 @@ export const DependencyTable = (props: any) => {
             <td className="text-ellipsis">https://www.pixabay.com/image</td>
             {/* <td className="text-right">Edit</td> */}
           </tr>
-          <tr className={`${classes.tableRow} py-4 px-4 text-sm `}>
+          <tr className={`${classes.tableRow} py-4 px-4 text-sm text-[.8rem]`}>
             <td className="py-4 pl-4 font-bold ">Next-feature </td>
             <td className="truncate ... pr-8">hoskeen</td>
             <td className="text-ellipsis">https://www.pixabay.com/image</td>
           </tr>
-          <tr className={`${classes.tableRow} py-4 px-4 text-sm`}>
+          <tr className={`${classes.tableRow} py-4 px-4 text-sm text-[.8rem]`}>
             <td className="py-4 pl-4 font-bold">Token </td>
             <td className="truncate ... pr-8">true</td>
             <td className="text-ellipsis">https://www.pixabay.com/image</td>
