@@ -36,21 +36,26 @@ export const DependenciesDisplay = () => {
         <p className="text-xl font-bold mt-10 text-grey-500">
           Create Dependency
         </p>
-
-        <div className="flex gap-4 m">
-          <div className="w-full">
-            <p className="text-sm font-medium my-4 text-grey-650">Key</p>
-            <Form placeHolder="background-image" />
-          </div>
-          <div className="w-full">
-            <p className="text-sm font-medium my-4 text-grey-650">Dev Value</p>
-            <Form placeHolder="https://myserver/live.jpg" />
-          </div>
-          <div className="w-full ">
-            <p className="text-sm font-medium my-4 text-grey-650">Live Value</p>
-            <Form placeHolder="https://myserver/test.jpg" />
-            <div className="float-right">
-              <Button title="Create Dependency" width="contain" />
+        <div className="px-4 my-6 rounded-[10px] border border-grey-900">
+          <div className="flex gap-4 m">
+            <div className="w-full">
+              <p className="text-sm font-medium my-4 text-grey-650">Key</p>
+              <Form placeHolder="background-image" />
+            </div>
+            <div className="w-full">
+              <p className="text-sm font-medium my-4 text-grey-650">
+                Dev Value
+              </p>
+              <Form placeHolder="https://myserver/live.jpg" />
+            </div>
+            <div className="w-full ">
+              <p className="text-sm font-medium my-4 text-grey-650">
+                Live Value
+              </p>
+              <Form placeHolder="https://myserver/test.jpg" />
+              <div className="float-right">
+                <Button title="Create Dependency" width="contain" />
+              </div>
             </div>
           </div>
         </div>

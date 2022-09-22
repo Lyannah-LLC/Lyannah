@@ -7,12 +7,17 @@ module.exports = {
     colors: {
       white: colors.white,
       black: colors.black,
-      danger: colors.black,
+      danger: colors.red,
       success: colors.black,
       link: colors.black,
       overlay: colors.black,
       black: colors.black,
       grey: colors.gray,
+      red: {
+        300: "#b90000",
+        700: "#750000",
+        950: "#21000048",
+      },
       lemon: {
         800: "#293D2F",
         100: "#28B851",
