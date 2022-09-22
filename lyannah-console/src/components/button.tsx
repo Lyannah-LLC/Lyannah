@@ -10,7 +10,7 @@ export const Button = (props: any) => {
      
       ${
         props.width == "contain" ? null : "w-full"
-      } my-8 text-white text-[16px]`}
+      } my-8 text-white text-[12px]`}
       onClick={props.onClick}
     >
       {props.title}
