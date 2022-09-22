@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { AuthLanding } from "../general_components/AuthLanding";
-import { BoxPadding } from "../general_components/BoxPadding";
-import { Button } from "../general_components/button";
-import { Form } from "../general_components/Form";
-import { SocialAuthButton } from "../general_components/SocialAuthButton";
+import { AuthLanding } from "../../components/AuthLanding";
+import { BoxPadding } from "../../components/BoxPadding";
+import { Button } from "../../components/button";
+import { Form } from "../../components/Form";
+import { SocialAuthButton } from "../../components/SocialAuthButton";
 import classes from "../login/Login.module.css";
 
 export const ForgotPassword = () => {

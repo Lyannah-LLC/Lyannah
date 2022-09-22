@@ -1,4 +1,4 @@
-import { ConsoleWrapper } from "../../../general_components/console_wrapper/ConsoleWrapper";
+import { ConsoleWrapper } from "../../../../components/console_wrapper/ConsoleWrapper";
 import { SDKCards } from "./SdkCards";
 
 export const SDKsView = ({ logoUrl }) => {

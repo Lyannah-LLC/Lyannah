@@ -1,4 +1,4 @@
-import { ButtonTypes } from "../../util/buttonTypes";
+import { ButtonTypes } from "../util/buttonTypes";
 
 export const Button = (props: any) => {
   return (

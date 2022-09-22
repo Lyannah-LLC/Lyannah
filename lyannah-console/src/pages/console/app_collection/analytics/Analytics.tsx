@@ -1,5 +1,5 @@
-import { Button } from "../../../general_components/button";
-import { ConsoleWrapper } from "../../../general_components/console_wrapper/ConsoleWrapper";
+import { Button } from "../../../../components/button";
+import { ConsoleWrapper } from "../../../../components/console_wrapper/ConsoleWrapper";
 import { Tag } from "../../all_apps/Tag";
 
 export const AnalyticsView = (props: any) => {

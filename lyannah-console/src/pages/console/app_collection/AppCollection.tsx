@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { DependencyContextProvider } from "../../../contexts/dependencies/dependencies";
 import { SideBarContext } from "../../../contexts/sideBar/sideBar";
 import { SideBarComps } from "../../../util/sideBarEnum";
-import { NavigationBar } from "../../general_components/NavigationBar";
+import { NavigationBar } from "../../../components/NavigationBar";
 import { AnalyticsView } from "./analytics/Analytics";
 import classes from "./AppCollection.module.css";
 import { DependenciesDisplay } from "./dependencies/DependencyDisplay";

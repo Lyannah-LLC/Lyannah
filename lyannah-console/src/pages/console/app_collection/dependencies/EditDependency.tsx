@@ -1,6 +1,6 @@
-import { Button } from "../../../general_components/button";
-import { Overlay } from "../../../general_components/create_new_app/Overlay";
-import { Form } from "../../../general_components/Form";
+import { Button } from "../../../../components/button";
+import { Overlay } from "../../../../components/create_new_app/Overlay";
+import { Form } from "../../../../components/Form";
 
 export const EditDependency = (props: any) => {
   return (

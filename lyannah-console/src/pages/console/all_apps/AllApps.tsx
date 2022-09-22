@@ -1,10 +1,10 @@
-import { BoxPadding } from "../../general_components/BoxPadding";
-import { Button } from "../../general_components/button";
+import { BoxPadding } from "../../../components/BoxPadding";
+import { Button } from "../../../components/button";
 import { AppCard } from "./AppCard";
 import { useContext } from "react";
 import { AllAppsContext } from "../../../contexts/all_apps/all_apps";
-import { Form } from "../../general_components/Form";
-import { Overlay } from "../../general_components/create_new_app/Overlay";
+import { Form } from "../../../components/Form";
+import { Overlay } from "../../../components/create_new_app/Overlay";
 
 export const AllApps = () => {
   const allApps = [

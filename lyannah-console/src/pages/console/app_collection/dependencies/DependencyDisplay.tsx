@@ -1,8 +1,8 @@
 import { useContext, useEffect } from "react";
 import { DependencyContext } from "../../../../contexts/dependencies/dependencies";
-import { Button } from "../../../general_components/button";
-import { ConsoleWrapper } from "../../../general_components/console_wrapper/ConsoleWrapper";
-import { Form } from "../../../general_components/Form";
+import { Button } from "../../../../components/button";
+import { ConsoleWrapper } from "../../../../components/console_wrapper/ConsoleWrapper";
+import { Form } from "../../../../components/Form";
 import { Tag } from "../../all_apps/Tag";
 import { DependencyTable } from "./DependencyTable";
 import { EditDependency } from "./EditDependency";
