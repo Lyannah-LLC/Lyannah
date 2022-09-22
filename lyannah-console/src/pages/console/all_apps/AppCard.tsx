@@ -6,7 +6,7 @@ export const AppCard = (props: any) => {
   return (
     <Link to="/console/app-collection">
       <div
-        className={`rounded-3xl border-gray-300 p-6 border w-5/6 mx-auto mb-12 md:w-72 bg-grey-950 ${classes.AppCard}`}
+        className={`rounded-3xl p-6 border w-5/6 mx-auto mb-12 md:w-72  ${classes.AppCard}`}
         onClick={props.onClick}
       >
         <div className="flex justify-between items-center">

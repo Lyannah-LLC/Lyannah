@@ -5,7 +5,7 @@ export const SocialAuthButton = (props: any) => {
     duration-300 socialButtonAuth cursor-pointer flex justify-start items-center py-[2px] px-[22px]"
     >
       <img src={`../images/${props.iconName}`} className="h-6" />
-      <p className="text-xs ml-[5rem]">{props.buttonTitle}</p>
+      <p className="text-sm ml-[5rem]">{props.buttonTitle}</p>
     </div>
   );
 };

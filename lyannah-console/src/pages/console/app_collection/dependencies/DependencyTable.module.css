@@ -3,7 +3,8 @@
   /* background-color: #f1f1fe; */
 }
 .tableRow {
-  border-bottom: 1px solid lightgrey;
+  /* grey-900 */
+  border-bottom: 1px solid #232323;
   transition: 0.3s;
 }
 

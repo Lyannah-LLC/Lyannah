@@ -30,7 +30,8 @@ module.exports = {
       },
     },
     fontSize: {
-      xs: ".68rem",
+      xs: ".675rem",
+      ss: ".775rem",
       sm: ".875rem",
       tiny: ".975rem",
       button: ".9rem",

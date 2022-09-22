@@ -21,7 +21,9 @@ export const SideBar = (props: any) => {
   });
 
   return (
-    <div className={`${classes.sideNav} h-screen w-64 2xl:w-96 bg-black pt-8`}>
+    <div
+      className={`${classes.sideNav} h-screen w-64 pt-8 border border-grey-900`}
+    >
       <SideBarContents
         icon="coin-stack.svg"
         title="Dependency"
