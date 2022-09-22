@@ -13,6 +13,11 @@ export const EditDependency = (props: any) => {
           <Form placeHolder="Dev value " />
           <Form placeHolder="Live value " />
           <Button title="Save" onClick={props.onSave} />
+          <hr className="text-grey-650 my-6" />
+          <div className="text-white text-sm">
+            <h3>Delete Dependency</h3>
+            <h3>Deactivate Dependency</h3>
+          </div>
         </>
       }
     />
