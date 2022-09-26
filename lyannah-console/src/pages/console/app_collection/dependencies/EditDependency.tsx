@@ -18,16 +18,16 @@ export const EditDependency = (props: any) => {
           <hr className="text-grey-650 my-6" />
           <div className="text-white text-sm">
             {/* <h3>Delete Dependency</h3> */}
-            <div className="flex justify-between">
-              <h3>Deactivate Dependency</h3>
-              <Toggle />
-            </div>
             <p
               className="text-center text-lemon-100 mt-10 mb-4 underline cursor-pointer"
               onClick={() => console.log("More was clicked")}
             >
               Danger Zone
             </p>
+            <div className="flex justify-between my-6">
+              <h3>Deactivate Dependency</h3>
+              <Toggle />
+            </div>
             <DeleteDependency />
           </div>
         </>
